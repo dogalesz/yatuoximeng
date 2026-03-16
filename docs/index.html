@@ -4,163 +4,330 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yatuoximeng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <nav>
+        <span class="nav-logo">&gt;_</span>
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#competitions">competitions</a>
+        <a href="#socials">socials</a>
+        <a href="#interests">interests</a>
+        <a href="#blog">blog</a>
+    </nav>
+
     <header>
-        <h1>☆ yatuoximeng's digital space ☆</h1>
-        <p>electronics enthusiast • geometry dash player • C coder</p>
+        <div class="header-prompt" data-text="> yatuoximeng"><span class="cursor"></span></div>
+        <p class="header-sub">
+            <span>embedded systems</span> &bull; <span>desktop apps</span> &bull; <span>webdesign</span>
+        </p>
     </header>
     
     <main>
         <section id="about">
-            <h2>⋆⭒˚.⋆ About me ⋆⭒˚.⋆</h2>
-            <p>Hi everyone! I'm a 15-year-old boy living in Hungary.</p>
+            <h2>About me</h2>
+            <p>I am a <span id="age" title="hover for full age" style="border-bottom:1px dotted currentColor;cursor:help">16</span> year old student from Hungary.</p>
             <p>My current interests include:</p>
             <ul>
-                <li>⚡ Electronics and circuit design</li>
-                <li>💻 Embedded C coding</li>
-                <li>🌌 Physics (All kinds of fun problems!)</li>
-                <li>📷 Making tech videos & tutorials</li>
-                <li>⏹️ Making levels in Geometry Dash</li>
+                <li>Electronics and PCB design</li>
+                <li>Embedded coding in C</li>
+                <li>Working full-stack</li>
+                <li>Making tech videos &amp; tutorials</li>
+                <li>Creating useful apps for Android</li>
             </ul>
         </section>
         
         <section id="skills">
-            <h2>⋆⭒˚.⋆ Skills & Knowledge ⋆⭒˚.⋆</h2>
-            <div class="skills-container">
-                <h3>Programming Languages:</h3>
-                <p>C, Python, HTML/CSS and a little Kotlin</p>
-                
-                <h3>Code editors I love using:</h3>
-                <p>VSCode, Notepad++, Code::Blocks, </p>
-                
-                <h3>Currently Learning:</h3>
-                <p>PCB design, Art, Android Studio</p>
+            <h2>Skills &amp; Knowledge</h2>
+            <div class="skills-grid">
+                <div class="skill-block">
+                    <h3>Languages</h3>
+                    <p>Python, Kotlin, C, HTML and CSS</p>
+                </div>
+                <div class="skill-block">
+                    <h3>Editors I use</h3>
+                    <p>VSCode, Micro</p>
+                </div>
+                <div class="skill-block">
+                    <h3>Currently learning</h3>
+                    <p>Physics, Math, Competitive programming, Rust</p>
+                </div>
+                <div class="skill-block">
+                    <h3>Hardware I use</h3>
+                    <p>ATmega16A, STM32, Analog circuits with ICs</p>
+                </div>
             </div>
         </section>
         
         <section id="projects">
-            <h2>⋆⭒˚.⋆ Major projects ⋆⭒˚.⋆</h2>
+            <h2>Projects</h2>
             <div class="projects">
                 <div class="project-card">
                     <h3>wFetch</h3>
-                    <p>The current fastest native windows fetcher written purely in C.</p>
-                    <p>(my favorite :3)</p>
+                    <p class="note">// my own startup</p>
+                    <p>The fastest native Windows system fetcher, written in the Tauri framework.</p>
+                    <div class="tags">
+                        <span class="tag">Rust</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Windows API</span>
+                    </div>
                 </div>
                 <div class="project-card">
                     <h3>The Larkers' Codex</h3>
-                    <p>A password-encrypted, Yaelokre themed notepad application. </p>
+                    <p>A Yaelokre themed notepad application with encryption.</p>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Encryption</span>
+                    </div>
                 </div>
                 <div class="project-card">
                     <h3>Aleph</h3>
-                    <p>A terminal command system written in x86 Assembly with a ton of functions!</p>
+                    <p>An array of linux terminal commands, written in Assembly.</p>
+                    <div class="tags">
+                        <span class="tag">x86 ASM</span>
+                        <span class="tag">Linux</span>
+                    </div>
                 </div>
                 <div class="project-card">
                     <h3>Dogalesz</h3>
                     <p>An educational website written and maintained by me, for academic purposes.</p>
+                    <div class="tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
                 </div>
                 <div class="project-card">
                     <h3>STM32 Smart Compass</h3>
-                    <p>A smart compass with a GPS function, co-written by me in an electronics camp.</p>
+                    <p>A GPS-enabled smart compass, co-developed at an electronics camp.</p>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">STM32</span>
+                        <span class="tag">KiCAD</span>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>STM32 Multimeter</h3>
-                    <p>A multimeter tool, capable of measuring low currents and voltages. This was my groups' final project at an electronics camp.</p>
+                    <h3>STM32 Analog Multimeter</h3>
+                    <p>Measures low currents and voltages. Final group project at an electronics camp.</p>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">STM32</span>
+                    </div>
                 </div>
             </div>
-            <p>Find more on my <a href="https://github.com/dogalesz" target="_blank">GitHub!</a>!</p>
+            <p class="project-more">More on my <a href="https://github.com/dogalesz" target="_blank" rel="noopener">GitHub</a>.</p>
+        </section>
+
+        <section id="competitions">
+            <h2>Competitions</h2>
+            <div class="competitions">
+                <div class="competition-card">
+                    <h3>Codeforces</h3>
+                    <p id="cf-rating">Rating: ...</p>
+                    <p>Participating in contests since September 2025, for fun.</p>
+                </div>
+                <div class="competition-card">
+                    <h3>PENdroid</h3>
+                    <p>National 5th place in 2026</p>
+                    <p>Designed several games and a functional planner app.</p>
+                </div>
+                <div class="competition-card">
+                    <h3>Kodkupa (IIOT Qualifiers)</h3>
+                    <p>National finalist in 2026</p>
+                    <p>In the 3rd qualifier round, my team earned 1st place nationwide.</p>
+                </div>
+            </div>
+
         </section>
         
         <section id="socials">
-            <h2>⋆⭒˚.⋆ My socials ⋆⭒˚.⋆</h2>
+            <h2>Socials</h2>
             <div class="social-links">
-                <a href="https://github.com/dogalesz" target="_blank">GitHub: @yatuoximeng</a>
-                <a href="https://twitter.com/kanytwes" target="_blank">Twitter: @kanytwes</a>
-                <a href="https://tiktok.com/@yatuobomb" target="_blank">TikTok: @yatuobomb</a>
+                <a href="https://github.com/dogalesz" target="_blank" rel="noopener">
+                    <span class="platform">GitHub</span>
+                    @yatuoximeng
+                </a>
+                <a href="https://twitter.com/kanytwes" target="_blank" rel="noopener">
+                    <span class="platform">Twitter</span>
+                    @kanytwes
+                </a>
+                <a href="https://tiktok.com/@simonpaty1" target="_blank" rel="noopener">
+                    <span class="platform">TikTok</span>
+                    @simonpaty1
+                </a>
             </div>
         </section>
         
         <section id="interests">
-            <h2>⋆⭒˚.⋆ Personal interests ⋆⭒˚.⋆</h2>
-            <h3>☆ Favorite characters ☆</h3>
+            <h2>Personal interests</h2>
+            <h3>Favorite characters</h3>
             <div class="characters">
                 <figure class="character-card">
-                    <img src="hunter.jpg" alt="Hunter from TOH">
+                    <img src="hunter.jpg" alt="Hunter from The Owl House">
+                    <figcaption>Hunter / TOH</figcaption>
                 </figure>
-
                 <figure class="character-card">
                     <img src="nicodiangelo.jpg" alt="Nico Di Angelo from Percy Jackson">
+                    <figcaption>Nico Di Angelo / PJO</figcaption>
                 </figure>
-
                 <figure class="character-card">
                     <img src="custardcookie.webp" alt="Custard Cookie III from Cookie Run">
+                    <figcaption>Custard III / Cookie Run</figcaption>
                 </figure>
-
                 <figure class="character-card">
-                    <img src="tailsprower.jpg" alt="Miles from Sonic">
+                    <img src="tailsprower.jpg" alt="Tails from Sonic">
+                    <figcaption>Tails / Sonic</figcaption>
                 </figure>
-
                 <figure class="character-card">
                     <img src="venti.png" alt="Venti from Genshin Impact">
+                    <figcaption>Venti / Genshin</figcaption>
                 </figure>
-
                 <figure class="character-card">
-                    <img src="basil.jpg" alt="Basil from Omori">
+                    <img src="basil.jpg" alt="Basil from OMORI">
+                    <figcaption>Basil / OMORI</figcaption>
                 </figure>
-
                 <figure class="character-card">
                     <img src="kingsley.jpg" alt="Kingsley from Yaelokre">
+                    <figcaption>Kingsley / Yaelokre</figcaption>
                 </figure>
-
                 <figure class="character-card">
-                    <img src="luz.jpg" alt="Luz from TOH"> 
+                    <img src="luz.jpg" alt="Luz from The Owl House">
+                    <figcaption>Luz / TOH</figcaption>
                 </figure>
-
                 <figure class="character-card">
                     <img src="mymy.jpg" alt="Mymy from Ongezellig">
+                    <figcaption>Mymy / Ongezellig</figcaption>
                 </figure>
-
                 <figure class="character-card">
                     <img src="wypher.jpg" alt="Wypher">
+                    <figcaption>Wypher</figcaption>
                 </figure>
-
                 <figure class="character-card">
                     <img src="zoey.jpg" alt="Zoey from KDH">
+                    <figcaption>Zoey / KDH</figcaption>
                 </figure>
             </div>
-            <h3>☆ Favorite artists ☆</h3>
+            <h3>Favorite artists</h3>
             <ul>
                 <li>Yaelokre</li>
                 <li>Tame Impala</li>
                 <li>salvia palth</li>
-                <li>TV Girl</li>
                 <li>Alex G</li>
             </ul>
         </section>
         
         <section id="blog">
-            <h2>⋆⭒˚.⋆ Personal blog & Other info⋆⭒˚.⋆</h2>
+            <h2>Blog &amp; Notes</h2>
             <div class="blog-posts">
                 <article>
                     <h3>My Electronics Projects Journey</h3>
-                    <p>I started messing around with simple Arduino projects at 12, then I stopped for a while but at 13, I joined an electrical engineering course in my school, where I first learned analog circuits and simple microcontroller circuits with the ATmega16A. Later, we moved on to use the STM32 for various projects, which included using the STM CubeIDE. On the winter of 2024, I started coding in C, and then x86 assembly. I've made countless projects and I collected about 20000 or more electronics components.</p>
+                    <p>I started messing around with simple Arduino projects at 12, then paused for a while. At 13, I joined an electrical engineering course at school where I first learned analog circuits and simple microcontroller circuits with the ATmega16A. Later we moved to the STM32 for various projects using STM32CubeIDE. In winter 2024, I started coding in C, then x86 assembly. I've built countless projects and collected over 20,000 electronics components.</p>
                 </article>
                 <article>
-                    <h3>Which IDE is the best? (Those which I've tried)</h3>
-                        <p>First of all, let me clarify that this is only my personal opinion and that opinions vary. You might prefer something entirely different from me.</p>
-                        <ul>
-                            <li>Arduino IDE - 3/10: Mid, but good for beginners. This is where everyone starts. Heavy on weak machines.</li>
-                            <li>Notepad++ - 5/10: Not a proper IDE, but its perfect for small C/C++ projects.</li>
-                            <li>Android Studio - 6/10: Really heavyweight, but usable. I want to get better at Kotlin so that I can actually enjoy using it.</li>
-                            <li>STM32CubeIDE - 7/10: The best microcontroller IDE, not meant for beginners.</li>
-                            <li>PyCharm - 7/10: Strong, python focused IDE, I mostly use it for CodeForces.</li>
-                            <li>VSCode - 8/10: Notepad++ on steroids. Lots of customization, extensions and lightweight.</li>
-                            <li>Code::Blocks - 9.5/10: Steep learning curve, it might feel like a fighter jet cockpit at first, but REALLY good. I use it all the time. Best C/C++ IDE.</li>
-                        </ul>
+                    <h3>Which IDE is the best? (Personal opinion)</h3>
+                    <ul>
+                        <li>Arduino IDE &mdash; 3/10: good for beginners, heavy on weak machines.</li>
+                        <li>Notepad++ &mdash; 5/10: not a proper IDE, but solid for small C/C++ files.</li>
+                        <li>Android Studio &mdash; 6/10: heavyweight but workable. Want to improve my Kotlin first.</li>
+                        <li>STM32CubeIDE &mdash; 7/10: best microcontroller IDE, not for beginners.</li>
+                        <li>PyCharm &mdash; 7/10: strong Python IDE, I use it for Codeforces.</li>
+                        <li>VSCode &mdash; 8/10: Notepad++ on steroids. Lightweight, very extensible.</li>
+                        <li>Code::Blocks &mdash; 9.5/10: steep learning curve, cockpit vibes, but the best C/C++ IDE around.</li>
+                    </ul>
                 </article>
             </div>
         </section>
     </main>
+
+    <footer>
+        <span>yatuoximeng &mdash; 2026</span>
+        <span>Somewhere in Hungary</span>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('section').forEach(s => observer.observe(s));
+
+        const navLinks = document.querySelectorAll('nav a');
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navLinks.forEach(a =>
+                        a.classList.toggle('active', a.getAttribute('href') === '#' + id)
+                    );
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+
+        document.querySelectorAll('section').forEach(s => navObserver.observe(s));
+
+        // age counter
+        (function() {
+            const birth = new Date(2009, 11, 14, 16, 30, 0);
+            const el = document.getElementById('age');
+            let hovered = false;
+            el.addEventListener('mouseenter', () => hovered = true);
+            el.addEventListener('mouseleave', () => hovered = false);
+            function update() {
+                const now = new Date();
+                let years   = now.getFullYear() - birth.getFullYear();
+                let months  = now.getMonth()    - birth.getMonth();
+                let days    = now.getDate()      - birth.getDate();
+                let hours   = now.getHours()     - birth.getHours();
+                let minutes = now.getMinutes()   - birth.getMinutes();
+                let seconds = now.getSeconds()   - birth.getSeconds();
+                if (seconds < 0) { seconds += 60; minutes--; }
+                if (minutes < 0) { minutes += 60; hours--; }
+                if (hours   < 0) { hours   += 24; days--; }
+                if (days    < 0) { days += new Date(now.getFullYear(), now.getMonth(), 0).getDate(); months--; }
+                if (months  < 0) { months  += 12; years--; }
+                el.textContent = hovered
+                    ? `${years}y ${months}mo ${days}d ${hours}h ${minutes}m ${seconds}s`
+                    : years;
+            }
+            setInterval(update, 100);
+            update();
+        })();
+
+        // codeforces rating
+        fetch('https://codeforces.com/api/user.info?handles=yatuoximeng')
+            .then(r => r.json())
+            .then(data => {
+                const u = data.result[0];
+                const rating = u.rating ?? 'unrated';
+                const rank = u.rank ?? 'unranked';
+                document.getElementById('cf-rating').textContent = `Rating: ${rating} (${rank})`;
+            })
+            .catch(() => {
+                document.getElementById('cf-rating').textContent = 'Rating: unavailable';
+            });
+
+        // typewriter
+        (function() {
+            const el = document.querySelector('.header-prompt');
+            const text = el.dataset.text;
+            const cursor = el.querySelector('.cursor');
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    el.insertBefore(document.createTextNode(text[i]), cursor);
+                    i++;
+                    setTimeout(type, 90);
+                }
+            }
+            setTimeout(type, 400);
+        })();
+    </script>
 </body>
 </html>
