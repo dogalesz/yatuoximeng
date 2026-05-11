@@ -6,13 +6,13 @@
     <title>yatuoximeng</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Share+Tech+Mono&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <nav>
-        <span class="nav-logo">&gt;_</span>
+        <span class="nav-name">lottieyael</span>
         <a href="#about">about</a>
         <a href="#skills">skills</a>
         <a href="#projects">projects</a>
@@ -23,7 +23,8 @@
     </nav>
 
     <header>
-        <div class="header-prompt" data-text="> yatuoximeng"><span class="cursor"></span></div>
+        <div class="hero-name">lottieyael</div>
+        <div class="hero-rule"></div>
         <p class="header-sub">
             <span>embedded systems</span> &bull; <span>desktop apps</span> &bull; <span>webdesign</span>
         </p>
@@ -32,12 +33,12 @@
     <main>
         <section id="about">
             <h2>About me</h2>
-            <p>I am a <span id="age" title="hover for full age" style="border-bottom:1px dotted currentColor;cursor:help">16</span> year old student from Hungary.</p>
+            <p>I am a <span id="age" title="hover for full age" style="border-bottom:1px dotted currentColor;cursor:help">16</span> year old dev from Hungary.</p>
             <p>My current interests include:</p>
             <ul>
-                <li>Electronics and PCB design</li>
-                <li>Embedded coding in C</li>
-                <li>Working full-stack</li>
+                <li>Desktop apps</li>
+                <li>Embedded coding (in C)</li>
+                <li>Kotlin development</li>
                 <li>Making tech videos &amp; tutorials</li>
                 <li>Creating useful apps for Android</li>
             </ul>
@@ -48,7 +49,7 @@
             <div class="skills-grid">
                 <div class="skill-block">
                     <h3>Languages</h3>
-                    <p>Python, Kotlin, C, HTML and CSS</p>
+                    <p>Python, Kotlin, C, C++, Rust</p>
                 </div>
                 <div class="skill-block">
                     <h3>Editors I use</h3>
@@ -56,7 +57,7 @@
                 </div>
                 <div class="skill-block">
                     <h3>Currently learning</h3>
-                    <p>Physics, Math, Competitive programming, Rust</p>
+                    <p>Physics, Math, Competitive programming, Art</p>
                 </div>
                 <div class="skill-block">
                     <h3>Hardware I use</h3>
@@ -70,7 +71,7 @@
             <div class="projects">
                 <div class="project-card">
                     <h3>wFetch</h3>
-                    <p class="note">// my own startup</p>
+                    <p class="note">OTIO Startup project</p>
                     <p>The fastest native Windows system fetcher, written in the Tauri framework.</p>
                     <div class="tags">
                         <span class="tag">C</span>
@@ -80,8 +81,48 @@
                     </div>
                 </div>
                 <div class="project-card">
+                    <h3>Visuall</h3>
+                    <p class="note">My most impressive project!</p>
+                    <p>A compiled programming language with Python-like syntax, built on LLVM. Compiles to native machine code with O2 optimization, a mark-and-sweep GC, closures, f-strings, and a growing standard library. Comes with a full LSP server and a VS Code extension.</p>
+                    <div class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">LLVM</span>
+                        <span class="tag">Language Design</span>
+                        <span class="tag">LSP</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>GeoSentinel</h3>
+                    <p>A desktop app that shows active natural disasters on a real-time 3D globe, pulling live event data from NASA EONET with MODIS satellite imagery previews.</p>
+                    <div class="tags">
+                        <span class="tag">Rust</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Three.js</span>
+                        <span class="tag">Tauri 2</span>
+                        <span class="tag">NASA API</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Consense</h3>
+                    <p>An Android app that sends your prompt to ChatGPT, Claude, and Gemini simultaneously, then synthesizes all three responses side by side.</p>
+                    <div class="tags">
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Jetpack Compose</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">AI</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>yatuofetch</h3>
+                    <p>A Windows terminal system fetcher in C with glitch ASCII art animations, showing OS, CPU, RAM, GPU and network info at startup.</p>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Windows API</span>
+                    </div>
+                </div>
+                <div class="project-card">
                     <h3>The Larkers' Codex</h3>
-                    <p>A Yaelokre themed notepad application with encryption.</p>
+                    <p>A Yaelokre themed notepad application with encryption. Not even Claude Opus 4.6 could break it!</p>
                     <div class="tags">
                         <span class="tag">C</span>
                         <span class="tag">Encryption</span>
@@ -93,14 +134,6 @@
                     <div class="tags">
                         <span class="tag">x86 ASM</span>
                         <span class="tag">Linux</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Dogalesz</h3>
-                    <p>An educational website written and maintained by me, for academic purposes.</p>
-                    <div class="tags">
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">JavaScript</span>
                     </div>
                 </div>
                 <div class="project-card">
@@ -121,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <p class="project-more">More on my <a href="https://github.com/dogalesz" target="_blank" rel="noopener">GitHub</a>.</p>
+            <p class="project-more">More on my <a href="https://github.com/lottieyael" target="_blank" rel="noopener">GitHub</a>.</p>
         </section>
 
         <section id="competitions">
@@ -149,9 +182,9 @@
         <section id="socials">
             <h2>Socials</h2>
             <div class="social-links">
-                <a href="https://github.com/dogalesz" target="_blank" rel="noopener">
+                <a href="https://github.com/lottieyael" target="_blank" rel="noopener">
                     <span class="platform">GitHub</span>
-                    @yatuoximeng
+                    @lottieyael
                 </a>
                 <a href="https://twitter.com/kanytwes" target="_blank" rel="noopener">
                     <span class="platform">Twitter</span>
@@ -230,16 +263,7 @@
                     <p>I started messing around with simple Arduino projects at 12, then paused for a while. At 13, I joined an electrical engineering course at school where I first learned analog circuits and simple microcontroller circuits with the ATmega16A. Later we moved to the STM32 for various projects using STM32CubeIDE. In winter 2024, I started coding in C, then x86 assembly. I've built countless projects and collected over 20,000 electronics components.</p>
                 </article>
                 <article>
-                    <h3>Which IDE is the best? (Personal opinion)</h3>
-                    <ul>
-                        <li>Arduino IDE &mdash; 3/10: good for beginners, heavy on weak machines.</li>
-                        <li>Notepad++ &mdash; 5/10: not a proper IDE, but solid for small C/C++ files.</li>
-                        <li>Android Studio &mdash; 6/10: heavyweight but workable. Want to improve my Kotlin first.</li>
-                        <li>STM32CubeIDE &mdash; 7/10: best microcontroller IDE, not for beginners.</li>
-                        <li>PyCharm &mdash; 7/10: strong Python IDE, I use it for Codeforces.</li>
-                        <li>VSCode &mdash; 8/10: Notepad++ on steroids. Lightweight, very extensible.</li>
-                        <li>Code::Blocks &mdash; 9.5/10: steep learning curve, cockpit vibes, but the best C/C++ IDE around.</li>
-                    </ul>
+                    <h3>To be continued :3</h3>
                 </article>
             </div>
         </section>
@@ -275,7 +299,7 @@
 
         // age counter
         (function() {
-            const birth = new Date(2009, 11, 14, 16, 30, 0);
+            const birth = new Date(2009, 12, 14, 16, 30, 0);
             const el = document.getElementById('age');
             let hovered = false;
             el.addEventListener('mouseenter', () => hovered = true);
@@ -314,21 +338,7 @@
                 document.getElementById('cf-rating').textContent = 'Rating: unavailable';
             });
 
-        // typewriter
-        (function() {
-            const el = document.querySelector('.header-prompt');
-            const text = el.dataset.text;
-            const cursor = el.querySelector('.cursor');
-            let i = 0;
-            function type() {
-                if (i < text.length) {
-                    el.insertBefore(document.createTextNode(text[i]), cursor);
-                    i++;
-                    setTimeout(type, 90);
-                }
-            }
-            setTimeout(type, 400);
-        })();
+
     </script>
 </body>
 </html>
